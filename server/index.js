@@ -3,7 +3,11 @@ const app = express();
 const port = 5000; // You can change the port
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://client-project-theta-six.vercel.app/', // Replace with your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+}));
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
