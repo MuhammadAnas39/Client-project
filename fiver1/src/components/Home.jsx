@@ -91,9 +91,9 @@ const Home = () => {
     { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_45-45.jpg', alt: 'Project 5' },
     { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_11-21.jpg', alt: 'Project 6' },
     { img: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80', alt: 'Project 7' },
-    { img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80', alt: 'Project 8' },
-    { img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80', alt: 'Project 9' },
-    { img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80', alt: 'Project 10' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_32-57.jpg', alt: 'Project 8' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_34-09.jpg', alt: 'Project 9' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_13-29.jpg', alt: 'Project 10' },
   ];
 
   return (
@@ -354,14 +354,14 @@ const Home = () => {
         </div>
       </section>
       {/* Play School Toy Info Section */}
-      <section className="w-full bg-gray-200 py-12">
+      <section className="w-full bg-[#eee] py-12">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 px-4">
           {/* Left: Single Image with Blue Circle */}
-          <div className="">
+          <div className="flex justify-end items-center">
            
              
               {/* Main Toy Image */}
-              <img src="https://img.freepik.com/free-photo/little-boy-playing-with-colorful-toys_1150-11015.jpg?w=400" alt="Play School Toy"  />
+              <img src="https://www.playschooltoy.com/designer/images/about-infographic.jpg" alt="Play School Toy" className='w-[65%] h-full object-cover' />
           </div>
           {/* Right: Text Content */}
           <div className="flex-1">
