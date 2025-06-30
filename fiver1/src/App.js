@@ -20,7 +20,7 @@ const NewArrivals = () => <div className="container mx-auto mt-4 p-4"><h1 classN
 function App() {
 
   useEffect(() => {
-  axios.get(`${process.env.REACT_APP_API_URL}/`)
+  axios.get(`${process.env.REACT_APP_API_URL ? process.env.REACT_APP_API_URL : "http://localhost:5000"}`)
     .then(res => {
       console.log(res.data); // Hello World!
     })
