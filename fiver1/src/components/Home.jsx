@@ -573,7 +573,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-start gap-8 justify-center ">
           {/* Left: Heading */}
           <div className="md:w-1/3 flex flex-col items-start justify-center mb-8 md:mb-0">
-            <span className="text-6xl text-[#ffd600]">&ldquo;</span>
+            <span className="text-6xl -mb-6 text-[#ffd600]">&ldquo;</span>
             <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">What Our<br/>Customers Are<br/>Saying</h2>
           </div>
           {/* Right: Reviews Slider */}
@@ -593,19 +593,21 @@ const Home = () => {
               {reviews.map((review, idx) => (
                 <div key={idx} className="px-4 flex flex-col items-center">
                   {/* Card with speech bubble triangle */}
-                  <div className="relative w-full">
-                    <div className="bg-gray-100 rounded-lg shadow-md p-8 min-h-[180px] flex flex-col justify-between">
-                      <p className="text-gray-800 italic text-lg">{review.text}</p>
+                  <div className="relative w-full flex flex-col items-center">
+                    <div className="bg-gray-100 rounded-sm shadow-md p-8 flex flex-col justify-between w-[350px] h-[180px] md:w-[370px] md:h-[200px] max-w-full">
+                      <div className="overflow-y-auto h-full pr-2">
+                        <p className="text-gray-800 italic text-lg">{review.text}</p>
+                      </div>
                     </div>
                     {/* Triangle */}
-                    <div className="absolute left-10 bottom-[-18px]">
+                    <div className="absolute left-12 bottom-[-18px]">
                       <svg width="40" height="20" viewBox="0 0 40 20">
                         <polygon points="0,0 20,20 40,0" fill="#f3f4f6" />
                       </svg>
                     </div>
                   </div>
                   {/* Name and star below card, centered */}
-                  <div className="flex items-center gap-2 mt-6" style={{marginLeft: '10px'}}>
+                  <div className="flex items-center gap-2 mt-6">
                     <span className="text-[#ffd600] text-2xl">★</span>
                     <span className="font-bold text-white text-lg">{review.name}</span>
                   </div>

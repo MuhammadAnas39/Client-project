@@ -67,7 +67,7 @@ const Navbar = () => {
             />
             <button 
               type="submit" 
-              className="bg-red-600 text-white p-2 flex items-center justify-center hover:bg-red-700"
+              className="bg-red-600 text-white px-4 py-[11px] flex items-center justify-center hover:bg-red-700"
               style={{ borderRadius: '0' }}
             >
               <FaSearch className="text-lg" />
