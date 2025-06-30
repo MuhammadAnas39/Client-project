@@ -6,9 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Banner images array (replace with your own images)
 const bannerImages = [
-  "https://img.freepik.com/free-vector/children-sitting-desk-classroom_1308-32401.jpg",
-  "https://img.freepik.com/free-vector/kids-classroom-illustration_1308-32402.jpg",
-  "https://img.freepik.com/free-vector/children-school-classroom_1308-32403.jpg"
+  "https://www.playschooltoy.com/uploaded_files/banner_images/banner_08_01_2025_12_33_06.jpg",
+  "https://www.playschooltoy.com/uploaded_files/banner_images/banner_10_01_2025_09_41_36.jpg",
+  "https://www.playschooltoy.com/uploaded_files/banner_images/banner_08_01_2025_12_32_46.jpg",
+  "https://www.playschooltoy.com/uploaded_files/banner_images/banner_08_01_2025_12_32_18.jpg"
 ];
 
 // Client logos for Our Clients section
@@ -83,12 +84,12 @@ const Home = () => {
   };
 
   const projectImages = [
-    { img: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80', alt: 'Project 1' },
-    { img: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80', alt: 'Project 2' },
-    { img: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80', alt: 'Project 3' },
-    { img: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=600&q=80', alt: 'Project 4' },
-    { img: 'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=600&q=80', alt: 'Project 5' },
-    { img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80', alt: 'Project 6' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_34-09.jpg', alt: 'Project 1' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_42-18.jpg', alt: 'Project 2' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_43-07.jpg', alt: 'Project 3' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_44-03.jpg', alt: 'Project 4' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_45-45.jpg', alt: 'Project 5' },
+    { img: 'https://www.playschooltoy.com/uploaded_files/gallery_images/collar_11-21.jpg', alt: 'Project 6' },
     { img: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80', alt: 'Project 7' },
     { img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80', alt: 'Project 8' },
     { img: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80', alt: 'Project 9' },
@@ -113,25 +114,13 @@ const Home = () => {
         </Slider>
       </div>
       {/* Why We're the Right Choice Section */}
-      <section className="w-full bg-[#d2f1fb] py-12">
+      <section className="w-full bg-[#c9f0fe] py-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#23276b] mb-10 animate-fadeInUp">Why We're the Right Choice?</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           {/* 1 */}
           <div className="flex items-center gap-4 animate-fadeInUp delay-400">
             <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <path d="M14 36V20a2 2 0 012-2h24a2 2 0 012 2v16" stroke="url(#grad1)" strokeWidth="3" fill="none"/>
-                  <rect x="18" y="26" width="20" height="12" rx="2" fill="url(#grad1)"/>
-                  <rect x="24" y="32" width="8" height="6" rx="1" fill="#fff"/>
-                </g>
-              </svg>
+              <img src="https://www.playschooltoy.com/designer/images/experience-icon.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
             <div>
               <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Years Of Experience</h3>
@@ -140,19 +129,8 @@ const Home = () => {
           </div>
           {/* 2 */}
          <div className="flex items-center gap-4 animate-fadeInUp delay-400">
-            <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <circle cx="28" cy="28" r="20" stroke="url(#grad2)" strokeWidth="3" fill="none"/>
-                  <path d="M28 36V28M28 28l6-6M28 28l-6-6" stroke="url(#grad2)" strokeWidth="3" strokeLinecap="round"/>
-                </g>
-              </svg>
+           <span className="mb-3">
+              <img src="https://www.playschooltoy.com/designer/images/Customize.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
            <div>
              <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Customize Collection</h3>
@@ -162,18 +140,7 @@ const Home = () => {
           {/* 3 */}
           <div className="flex items-center gap-4 animate-fadeInUp delay-400">
             <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <rect x="10" y="24" width="36" height="12" rx="6" fill="url(#grad3)"/>
-                  <rect x="36" y="18" width="10" height="8" rx="4" fill="url(#grad3)"/>
-                </g>
-              </svg>
+              <img src="https://www.playschooltoy.com/designer/images/worldwide-shipment.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
           <div>
               <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Worldwide Shipment</h3>
@@ -182,21 +149,8 @@ const Home = () => {
           </div>
           {/* 4 */}
           <div className="flex items-center gap-4 animate-fadeInUp delay-400">
-            <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <circle cx="28" cy="28" r="20" fill="url(#grad4)"/>
-                  <path d="M18 32c2 2 6 2 8 0s6-2 8 0" stroke="#fff" strokeWidth="2" fill="none"/>
-                  <circle cx="22" cy="24" r="2" fill="#fff"/>
-                  <circle cx="34" cy="24" r="2" fill="#fff"/>
-                </g>
-              </svg>
+           <span className="mb-3">
+              <img src="https://www.playschooltoy.com/designer/images/client-shipment.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
             <div>
                 <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Client Satisfaction</h3>
@@ -206,18 +160,7 @@ const Home = () => {
           {/* 5 */}
            <div className="flex items-center gap-4 animate-fadeInUp delay-400">
             <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <circle cx="28" cy="28" r="20" stroke="url(#grad5)" strokeWidth="3" fill="none"/>
-                  <path d="M28 36V28M28 28l6-6M28 28l-6-6" stroke="url(#grad5)" strokeWidth="3" strokeLinecap="round"/>
-                </g>
-              </svg>
+              <img src="https://www.playschooltoy.com/designer/images/inovative-ideas.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
           <div>
               <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Team Of Experts</h3>
@@ -226,20 +169,8 @@ const Home = () => {
           </div>
           {/* 6 */}
           <div className="flex items-center gap-4 animate-fadeInUp delay-400">
-            <span className="mb-3">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad6" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#e6003a"/>
-                    <stop offset="100%" stopColor="#23276b"/>
-                  </linearGradient>
-                </defs>
-                <g>
-                  <circle cx="28" cy="28" r="20" fill="url(#grad6)"/>
-                  <path d="M20 32l8-8 8 8" stroke="#fff" strokeWidth="2" fill="none"/>
-                  <circle cx="28" cy="24" r="2" fill="#fff"/>
-                </g>
-              </svg>
+             <span className="mb-3">
+              <img src="https://www.playschooltoy.com/designer/images/top-quality.jpg" alt="" className="max-w-full transition-transform duration-700 hover:rotate-[360deg]" />
             </span>
           <div>
               <h3 className="text-xl font-semibold text-[#1976d2] mb-1">Premium Quality Products</h3>
@@ -267,12 +198,12 @@ const Home = () => {
             <div className="flex-1 flex justify-center items-center">
               <div className="relative w-full max-w-xl rounded-2xl overflow-hidden shadow-lg">
                 <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank" rel="noopener noreferrer" className="block group">
-                  <img src="https://static.vecteezy.com/system/resources/previews/007/270/994/non_2x/happy-school-children-with-alphabet-blocks-vector.jpg" alt="Maskeen Classroom Video" className="w-full h-56 md:h-[44vh] object-cover rounded-2xl group-hover:brightness-90 transition" />
+                  <img src="https://www.playschooltoy.com/designer/images/thumbnails.webp" alt="Maskeen Classroom Video" className="w-full h-56 md:h-[44vh] object-cover rounded-2xl group-hover:brightness-90 transition" />
                   {/* Logo overlay */}
-                  <img src="https://maskeenoverseas.com/assets/images/logo.png" alt="Maskeen Logo" className="absolute top-4 left-4 w-28 h-auto z-10" />
+                
                   {/* Play button overlay */}
                   <span className="absolute inset-0 flex items-center justify-center z-20">
-                    <span className="bg-white bg-opacity-80 rounded-full p-3 shadow-lg hover:scale-110 transition-transform">
+                    <span className="bg-transparent bg-opacity-80 rounded-full p-3  hover:scale-110 transition-transform">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="24" cy="24" r="24" fill="#e6003a"/>
                         <polygon points="20,16 36,24 20,32" fill="#fff"/>
